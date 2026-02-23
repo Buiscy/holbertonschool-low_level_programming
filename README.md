@@ -1,0 +1,1 @@
+So, time to learn code. Each Readme in each subsection will have a summery of what I have learned and stuff like that

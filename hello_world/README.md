@@ -1,0 +1,1 @@
+0-preprocessor > gcc $CFILE -E > c = 
