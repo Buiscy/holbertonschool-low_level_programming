@@ -61,3 +61,12 @@ Functions in C:
         // Function programming statements implementation
         }
 
+When Compiling C, use command gcc -Wall -pedantic -Werror -Wextra -std=gnu89 "Filename.c" "Filename" - So "Filename.c" specifies which C file I want compiled, while "Filename" specifies what I want it named after being compiled.
+    gcc is the compiler
+        -wall : "enable most common warnings" catches just common errors like unsused variables, missing return statements and such
+        -wextra: modifer ontop of -wall, adds extra warnings and catching checks
+        -werror: makes all 'warnings' turn to errors which stops compiling process. so instead of a issue being a warning but still compiling (which could lead to a crash later due to issues) it makes all caught warnings into errors that causes compiler to stop.
+        -pedantic - follows C standard strictly, does not allow compiler-specific shortcuts.
+        -std=gnu89 - sets language standard used by compiler
+        -o - is for output. means I specify a named output basically.
+
