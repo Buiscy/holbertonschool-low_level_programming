@@ -2,11 +2,9 @@
 #include <stdio.h>
 #include <time.h>
 /**
-* main - Assign a random number to the variable n each time it is executed.
-* 	Print whether the number stored in the variable n is positive or negative.
-* 		Functions:
-* 		srand = Random variable function
-* 		%i
+* more headers goes there
+* main - Assign a random number to the variable n each time it is excuted
+* betty style doc for function main goes there
 **/
 int main(void)
 {
