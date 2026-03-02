@@ -2,6 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 
+//*generates random value and prints to console the last digit of n and if its greater, lesser or equal to zero
 int main(void)
 {
 	int n;

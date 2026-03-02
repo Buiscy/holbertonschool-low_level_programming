@@ -70,3 +70,6 @@ When Compiling C, use command gcc -Wall -pedantic -Werror -Wextra -std=gnu89 "Fi
         -std=gnu89 - sets language standard used by compiler
         -o - is for output. means I specify a named output basically.
 
+Things about C:
+    C is extensible, meaning if a code is already written, new features can be added to it with a few alterations.
+    Standard libraries in C: 
