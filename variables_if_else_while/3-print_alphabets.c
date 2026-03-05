@@ -9,13 +9,11 @@ int main(void)
 	{
 		putchar(ch);
 	}
-	putchar('\n');
-		/*remember, this adds blank spaces, well it should anyway
-		 *
-		 */
+	
 	for (ch = 'A'; ch <= 'Z'; ch++)
 	{
 		putchar(ch);
 	}
+	putchar('\n');
 	return(0);
 }
