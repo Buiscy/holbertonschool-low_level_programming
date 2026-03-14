@@ -7,3 +7,7 @@ Now in 0-putchar.c:
     REMEMBER: 
         When using string -char [s] = "yada"
         when tying to use it later for an index, be it print or otherwise, it must be -func(s[*]) with * being a indexing variable.
+
+
+
+Just remember, as scary as it is to be behind and learn code, its far worse and much scarier to leave good opitunities to waste from stress
