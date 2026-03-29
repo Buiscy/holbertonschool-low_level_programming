@@ -12,7 +12,7 @@ int main(void)
 {
     list_t *head;
     list_t *new;
-    list_t hello = {"Best", 4, NULL};
+    list_t hello = {"School", 6, NULL};
     size_t n;
 
     head = &hello;
@@ -22,8 +22,8 @@ int main(void)
         printf("Error\n");
         return (1);
     }
-    new->str = strdup("Hello");
-    new->len = 5;
+    new->str = strdup("Best");
+    new->len = 4;
     new->next = head;
     head = new;
     n = print_list(head);
