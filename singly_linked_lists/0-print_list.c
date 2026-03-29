@@ -5,7 +5,7 @@ size_t print_list(const list_t *h)
 
 		if (h == NULL)
 		{
-			return(0);
+			return (0);
 		}
 		if (h->str == NULL)
 		{
@@ -16,5 +16,6 @@ size_t print_list(const list_t *h)
 			printf("[%d] %.*s\n", h->len, h->len, h->str);
 		}
 
-	return(print_list(h->next) + 1);
+	return ( print_list(h->next) + 1);
 }
+
