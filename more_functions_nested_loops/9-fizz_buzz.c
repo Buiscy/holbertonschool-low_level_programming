@@ -10,6 +10,12 @@ int main(void)
 			printf ("fizz");
 			putchar(32);
 		}
+		else if (i % 5 == 0)
+		{
+			printf ("buzz");
+			putchar(32);
+		}
+		
 		else
 		{
 			printf("%d", i);
