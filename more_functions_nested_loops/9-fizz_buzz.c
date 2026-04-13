@@ -5,7 +5,12 @@ int main(void)
 	int i;
 	for (i = 1; i <= 100; i++)
 	{
-		if (i % 3 == 0)
+		if ( i % 3 == 0 && i % 5 == 0)
+		{
+			printf ("fizzbuzz");
+			putchar(32);
+		}
+		else if (i % 3 == 0)
 		{
 			printf ("fizz");
 			putchar(32);
