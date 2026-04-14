@@ -4,17 +4,20 @@ int length (char *s);
 
 void puts_half(char *str)
 {
-	int i = length(b);
-	while (1)
+	int i = 0;
+	while (str[i] = '\0')
+	{
+		i++;
+	}
 
 }
 
 int length (char *s)
 {
 	int b = 0;
-	while (s[i] != '\0')
+	while (s[b] != '\0')
 	{
-		i++
+		b++;
 	}
 	return (b);
 }
