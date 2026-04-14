@@ -4,12 +4,23 @@ int length (char *s);
 
 void puts_half(char *str)
 {
-	int i = 0;
-	while (str[i] = '\0')
+	int i;
+	i = length(str);
+
+	if (i % 2 == 0)
 	{
+		i = i / 2;
+	}
+	else
+	{
+		i = (i + 1) / 2;
+	}
+	while (str[i] != '\0')
+	{
+		_putchar(str[i]);
 		i++;
 	}
-
+	_putchar(10);
 }
 
 int length (char *s)
