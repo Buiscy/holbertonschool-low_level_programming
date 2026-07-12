@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 
-/*generates random value and prints to console the last digit of n and if its greater, lesser or equal to zero */
+/*generates greater, lesser or equal to zero and prints */
 int main(void)
 {
 	int n;
@@ -14,11 +14,11 @@ int main(void)
 	{
 		printf("Last digit of %i is %i and is greater than 5\n", n, n % 10);
 	}
-	else if (n % 10 == 0)
+	if (n % 10 == 0)
 	{
 		printf("Last digit of %i is %i and is 0\n", n, n % 10);
 	}
-	else if	(n % 10 < 6)
+	if	(n % 10 < 6)
 	{
 		printf("Last digit of %i is %i and is less than 6 and not 0\n", n, n % 10);
 	}
