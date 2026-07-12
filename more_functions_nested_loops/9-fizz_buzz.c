@@ -5,29 +5,32 @@ int main(void)
 	int i;
 	for (i = 1; i <= 100; i++)
 	{
+		if (i > 1 && i < 100)
+		{
+			putchar(32);
+		}
+		else
+		{
+			putchar(10);
+		}
+
 		if ( i % 3 == 0 && i % 5 == 0)
 		{
-			printf ("fizzbuzz");
-			putchar(32);
+			printf ("FizzBuzz");
 		}
 		else if (i % 3 == 0)
 		{
-			printf ("fizz");
-			putchar(32);
+			printf ("Fizz");
 		}
 		else if (i % 5 == 0)
 		{
-			printf ("buzz");
-			putchar(32);
+			printf ("Buzz");
 		}
-		
 		else
 		{
 			printf("%d", i);
-			putchar(32);
 		}
-	
 	}
-	putchar(10);
+
 	return (0);
 }
