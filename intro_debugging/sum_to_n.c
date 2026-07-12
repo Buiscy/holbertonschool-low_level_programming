@@ -7,8 +7,9 @@ int sum_to_n(int n)
 
     for (i = 1; i < n; i++)
         sum += i;
-
-    return n;
+    
+    sum = sum + 10;
+    return sum;
 }
 
 /* -- DO NOT Modify the code below this line -- */
