@@ -5,6 +5,7 @@
 /*generates greater, lesser or equal to zero and prints */
 int main(void)
 {
+	/*generates greater, lesser or equal to zero and prints */
 	int n;
 
 	srand(time(0));
