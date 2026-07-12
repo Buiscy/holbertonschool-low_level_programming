@@ -7,17 +7,13 @@
  */
 int main(void)
 {
-	printf("_putchar")
-}
+int i = 0;
+	char s[] = "_putchar";
+		{
+		for (i = 0; s[i] != '\0'; i++)
+		_putchar(s[i]);
 
-/*
-*int i = 0;
-*	char s[] ="_putchar";
-*		{
-*		for (i=0; s[i]!='\0';i++)
-*		_putchar(s[i]);
-*
-*		}
-*	_putchar('\n');
-*	return (0);
-*/
+		}
+	_putchar('\n');
+	return (0);
+}
