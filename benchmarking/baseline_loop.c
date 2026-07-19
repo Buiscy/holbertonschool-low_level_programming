@@ -3,7 +3,7 @@
 
 #define ITERATION_COUNT 100000000UL
 
-int main(void)
+int main (void)
 {
     volatile unsigned long long result;
     clock_t start;
