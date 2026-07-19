@@ -1,7 +1,7 @@
 #include "main.h"
 
-
 int length (char *b);
+
 void rev_string(char *s)
 {
 	int i = 0;
@@ -18,10 +18,6 @@ void rev_string(char *s)
 		j--;
 	}
 }
-
-
-
-
 
 int length (char *b)
 {
