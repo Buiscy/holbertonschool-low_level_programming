@@ -19,7 +19,7 @@ int main (void)
 
 	while (i != 0)
 	{
-		printf("Simple Calculator\n1) Add\n2) Subtract\n3) Multiply\n4) Divide\n5)clear Result\n0) Quit\n");
+		printf("Simple Calculator\n1) Add\n2) Subtract\n3) Multiply\n4) Divide\n5) clear Result\n0) Quit\n");
 		printf ("choice: ");
 		scanf ("%d", &i);
 		if (i == 0)
@@ -30,7 +30,10 @@ int main (void)
 				printf ("Addition selected:\n");
 
 				if (_getinputs(&a, &b, c))
-					printf ("Result: %d\n", add(a, b));
+					{
+						a = add(a, b);
+						printf ("Result: %d\n", a);
+					}
 				c = 1;
 				sleep(2);
 				
@@ -41,7 +44,10 @@ int main (void)
 				printf ("Subtraction selected:\n");
 
 				if (_getinputs(&a, &b, c))
-					printf ("Result: %d\n", sub(a, b));
+					{
+						a = sub(a, b);
+						printf ("Result: %d\n", a);
+					}
 				c = 1;
 				sleep(2);
 			}
@@ -51,7 +57,10 @@ int main (void)
 				printf ("Multiplication selected:\n");
 
 				if (_getinputs(&a, &b, c))
-					printf ("Result: %d\n", mul(a, b));
+				{
+					a = mul(a, b);
+					printf ("Result: %d\n", a);
+				}
 				c = 1;
 				sleep(2);
 			}
@@ -62,13 +71,16 @@ int main (void)
 
 				if (_getinputs(&a, &b, c))
 				{
-					printf ("Result: %d\n", mul(a, b));
+					if (a == 0 || b == 0)
+						printf ("Error: division by zero\n");
+					else
+					{
+						a = div(a, b);
+						printf ("Result: %d\n", a);
+						c = 1;
+					}
 					sleep(1);
 				}
-				if (a == 0 || b == 0)
-					printf ("Error: division by zero\n");
-				else
-					printf ("Result: %d\n", div(a, b));
 			}
 		else if (i == 5)
 			{
