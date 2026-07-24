@@ -29,6 +29,7 @@ char *str_concat(char *s1, char *s2)
 		s3[i] = s1[i];
 		i++;
 	}
+	
 	while (s2 !=  NULL && s2[j] !=  '\0')
 	{
 		s3[i] = s2[j];
