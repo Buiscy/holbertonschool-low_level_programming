@@ -55,18 +55,18 @@ int main (void)
 
 				if (_getinputs(&a, &b))
 				{
-					printf ("Result: %d\n", mul(a, b));
+					if (a == 0 || b == 0)
+						printf ("Error: division by zero\n");
+					else
+						printf ("Result: %d\n", div(a, b));
 					sleep(1);
 				}
-				if (a == 0 || b == 0)
-					printf ("Error: division by zero\n");
-				else
-					printf ("Result: %d\n", div(a, b));
+
 			}
 
 		else
 			printf ("Invalid Choice\n");
-	}       
+	}
 	return (0);
 }
 
@@ -94,7 +94,7 @@ int _getinputs (int *a, int *b)
 	{
 		while (getchar() != '\n');
 		printf ("invalid input\n");
-		sleep(1);
+		sleep(2);
 		return (0);
 	}
 
@@ -103,7 +103,7 @@ int _getinputs (int *a, int *b)
 	{
 		while (getchar() != '\n');
 		printf ("invalid input\n");
-		sleep(1);
+		sleep(2);
 		return (0);
 	}
 
