@@ -15,11 +15,11 @@ int main (void)
 	int a;
 	int b;
 	int c;
-	c = 0;
+	c = 1;
 
 	while (i != 0)
 	{
-		printf("Simple Calculator\n1) Add\n2) Subtract\n3) Multiply\n4) Divide\n5) clear Result\n0) Quit\n");
+		printf("Simple Calculator\n1) Add\n2) Subtract\n3) Multiply\n4) Divide\n5)clear Result\n0) Quit\n");
 		printf ("choice: ");
 		scanf ("%d", &i);
 		if (i == 0)
